@@ -1,0 +1,109 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "cabeca cabeca cabeca"
+    "lateral meio meio"
+    "pe pe pe";
+    grid-template-columns: 300px auto auto;
+    grid-template-rows: 100px 550px auto;
+    margin: auto;
+}
+
+header{
+    grid-area: cabeca;
+    background-color: yellow;
+    text-align: center;
+}
+
+aside{
+    grid-area: lateral;
+    background-color: rgba(0, 255, 98, 0.733);
+}
+
+main{
+    grid-area: meio;
+    background-color: rgb(255, 255, 255);
+}
+
+footer{
+    grid-area: pe;
+    background-color: rgb(135, 135, 199);
+}
+
+@media screen and (max-width: 800px){
+        body{
+            grid-template-areas: 
+            "cabeca"
+            "lateral"
+            "meio"
+            "pe";
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+
+
+
+        }
+}
+
+.mercado1{
+    width: 300px;
+    height: 100px;
+}
+
+.botao{
+    border-radius: 100px;
+    width: 90px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+
+.botao2{
+    border-radius: 75px;
+    width: 87px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 234);
+}
+
+.botao3{
+    border-radius: 75px;
+    width: 87px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 17, 255);
+}
+
+.elementomae{
+    border: 10px blue solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.caixa{
+    border: 2px red solid;
+    width: 150px;
+    height: 150px;
+    justify-content: space-between 75px 75px 75px;
+}
+
+.celular{
+    width: 150px;
+    height: 150px;
+}
+
+.ps5{
+    width: 150px;
+    height: 150px;
+}
+
+.chocolate{
+    width: 150px;
+    height: 150px;
+}
+
+.tenis{
+    width: 150px;
+    height: 150px;
+}
