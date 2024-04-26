@@ -1,0 +1,43 @@
+div{
+    position: absolute;
+    left: 750px;
+    top: 100px;
+    border: 5px solid rgb(219, 182, 57);
+    border-radius: 20px 0px 20px 0px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: antiquewhite;
+    text-align: left;
+}
+
+h1{
+    color: purple;
+}
+
+body{
+    background: linear-gradient(45deg, red, orange, yellow);
+    background-size: 500%;
+    animation:fundoanimacao 5s ease infinite;
+}
+@keyframes fundoanimacao {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+
+.botao{
+    text-align: center;
+    top: 250px;
+    left: 150px;
+    position: absolute;
+}
