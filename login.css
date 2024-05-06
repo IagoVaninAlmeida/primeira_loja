@@ -18,7 +18,7 @@ h1{
 }
 
 body{
-    background: linear-gradient(45deg, red, orange, yellow);
+    background: linear-gradient(45deg, red, #56423D, #BEA6A0, #00A0FF, #006BD1);
     background-size: 500%;
     animation:fundoanimacao 5s ease infinite;
 }
