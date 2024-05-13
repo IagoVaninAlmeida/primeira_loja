@@ -8,9 +8,9 @@ div{
     height: 400px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    background-color: antiquewhite;
     text-align: left;
+    background-color: antiquewhite;
+    
 }
 
 h1{
@@ -18,7 +18,7 @@ h1{
 }
 
 body{
-    background: linear-gradient(45deg, red, #56423D, #BEA6A0, #00A0FF, #006BD1);
+    background: linear-gradient(45deg, red, antiquewhite, white, cyan, blue);
     background-size: 500%;
     animation:fundoanimacao 5s ease infinite;
 }
@@ -41,3 +41,19 @@ body{
     left: 150px;
     position: absolute;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Poetsen+One&display=swap');
+
+h1{
+    font-family: 'Freeman';
+    text-align: center;
+}
+
+.botao{
+    background-color: yellow;
+    color: black;
+    width: 115px;
+    height: 35px;
+    box-shadow: 2px 1px;
+    border-radius: 30px;
+    }

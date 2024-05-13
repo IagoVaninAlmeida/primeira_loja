@@ -102,3 +102,13 @@ footer{
     padding: 150px 77px;
     flex-direction: column;
 }
+
+.pcmostra{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+h3{
+    top: 100px;
+}
