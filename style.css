@@ -123,3 +123,25 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.pcmostra{
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    padding-left: 35px;
+}
+
+h3{
+    padding-left: 100px;
+}
+
+.guitar{
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    padding-left: 35px;
+}
+
+h4{
+    padding-left: 75px;
+}
