@@ -4,9 +4,9 @@ body{
     "cabeca cabeca cabeca"
     "lateral meio meio"
     "pe pe pe";
-    grid-template-columns: 300px auto auto;
-    grid-template-rows: 200px auto 200px;
-    margin: 0;
+    grid-template-columns: 250px auto auto;
+    grid-template-rows: 125px auto 125px;
+    margin: -50px;
 }
 
 header{
@@ -18,7 +18,8 @@ header{
 
 aside{
     grid-area: lateral;
-    background-color: rgba(0, 255, 98, 0.733);
+    background-color: yellow;
+    border: 2px black solid;
 }
 
 main{
@@ -46,34 +47,18 @@ footer{
         }
 }
 
+.mercado2{
+    width: 300px;
+    height: 100px;
+    padding-top: 5px;
+}
+
 .mercado1{
     width: 300px;
     height: 100px;
-    padding-top: 55px;
-}
-
-.botao{
-    border-radius: 100px;
-    width: 90px;
-    height: 25px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 0, 0);
-}
-
-.botao2{
-    border-radius: 75px;
-    width: 87px;
-    height: 25px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 0, 234);
-}
-
-.botao3{
-    border-radius: 75px;
-    width: 87px;
-    height: 25px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 17, 255);
+    position: absolute;
+    top: 10px;
+    left: 830px;
 }
 
 .elementomae{
@@ -114,14 +99,33 @@ footer{
 }
 
 .perfil{
-    top: 30px;
+    top: 10px;
     left: 60px;
     position: absolute;
+}
+
+.fotofil{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
 }
 
 a{
     text-decoration: none;
     color: black;
+}
+
+.carrinho{
+    width: 175px;
+    height: 175px;
+}
+
+.carro{
+    width: 100px;
+    height: 100px;
+    right: 2px;
+    top: 20px;
+    position: absolute;
 }
 
 .pcmostra{
@@ -132,7 +136,7 @@ a{
 }
 
 h3{
-    padding-left: 100px;
+    padding-left: 75px;
 }
 
 .guitar{
@@ -142,6 +146,189 @@ h3{
     padding-left: 35px;
 }
 
-h4{
+aside p{
     padding-left: 75px;
+}
+
+.div{
+    display: none;
+}
+
+.eleme{
+    display: none;
+}
+
+/* Reset básico de margens, paddings e box-sizing */
+body, 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais para o corpo */
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+}
+
+/* Estilos para links */
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+/* Estilos do cabeçalho */
+
+/* Estilos do menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Estilos dos links do menu */
+.menu a {
+    padding: 1rem;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+/* Efeito hover para os links do menu */
+.menu a:hover {
+    background-color: var(--royal-blue-dark);
+}
+/* Escondendo checkbox e label para o menu até a resolução adequada */
+.label-menu, 
+.checkbox {
+    display: none;
+}
+
+/* Estilos específicos para telas menores que 600px */
+@media screen and (max-width: 400px) {
+    /* Configuração do menu para dispositivos móveis */
+    .menu {
+        display: none; /* Menu escondido por padrão */
+        position: absolute;
+        top: 4.6875rem;
+        left: 0;
+        background-color: var(--royal-blue-light);
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 2;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: height 0.5s, visibility 0.5s;
+    }
+
+    /* Estilos dos links do menu para dispositivos móveis */
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 50px;
+    }
+
+    .div{
+        display: contents;
+    }
+
+    .eleme{
+        display: contents;
+    }
+
+    .label-menu, 
+    .checkbox {
+    display: none;
+}
+
+    /* Estilos do label para o menu */
+    .label-menu {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--white);
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    /* Estilos do ícone de hamburguer */
+    .hamburguer {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    /* Estilos das linhas do ícone de hamburguer */
+    .hamburguer::before,
+    .hamburguer::after {
+        content: "";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: transform 0.5s;
+    }
+
+    /* Menu visível quando checkbox está checado */
+    .checkbox:checked ~ .menu {
+        display: block;
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    /* Animação do ícone de hamburguer quando menu está aberto */
+    .checkbox:checked ~ .label-menu .hamburguer {
+        border-top-color: transparent;
+    }
+    .checkbox:checked ~ .label-menu .hamburguer::before {
+        transform: rotate(135deg);
+    }
+    .checkbox:checked ~ .label-menu .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+    .perfil{
+        display: none;
+    }
+    .mercado1{
+        top: 0px;
+        width: 200px;
+        left: 90px;
+        height: 50px;
+    }
+    .carro{
+        display: none;
+    }
+    .botao4{
+        bottom: -20px;
+    }
+
+}
+
+.celola{
+    width: 250px;
+    height: 250px;
+}
+
+.botao4{
+    background-color: rgb(52, 248, 52);
+    color: black;
+    width: 115px;
+    height: 35px;
+    box-shadow: 4px 3px;
+    border-radius: 30px;
+    right: 50px;
+    position: absolute;
+}
+
+.botao5{
+    border-radius: 100px;
+    width: 90px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(47, 255, 0);
+    
 }
