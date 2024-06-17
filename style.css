@@ -1,0 +1,339 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "cabeca cabeca cabeca"
+    "lateral meio meio"
+    "pe pe pe";
+    grid-template-columns: 250px auto auto;
+    grid-template-rows: 125px auto 125px;
+    margin: -50px;
+}
+
+header{
+    grid-area: cabeca;
+    background-color: yellow;
+    text-align: center;
+    position: relative;
+}
+
+aside{
+    grid-area: lateral;
+    background-color: yellow;
+    border: 2px black solid;
+}
+
+main{
+    grid-area: meio;
+    background-color: rgb(247, 233, 233);
+}
+
+footer{
+    grid-area: pe;
+    background-color: rgb(135, 135, 199);
+}
+
+@media screen and (max-width: 800px){
+        body{
+            grid-template-areas: 
+            "cabeca"
+            "lateral"
+            "meio"
+            "pe";
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+
+
+
+        }
+}
+
+.mercado2{
+    width: 300px;
+    height: 100px;
+    padding-top: 5px;
+}
+
+.mercado1{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 830px;
+}
+
+.elementomae{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    border: 2px solid rgb(255, 255, 255);
+    width: 275px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transition: 0.25s;
+    text-align: center;
+}
+.card:hover{
+    background-color: rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
+}
+
+.card img{
+    width: 150px;
+    height: 100px;
+}
+
+.card a{
+    background-color: aqua;
+    border-radius: 100px;
+    height: 25px;
+    text-align: center;
+}
+
+.perfil{
+    top: 10px;
+    left: 60px;
+    position: absolute;
+}
+
+.fotofil{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.carrinho{
+    width: 175px;
+    height: 175px;
+}
+
+.carro{
+    width: 100px;
+    height: 100px;
+    right: 2px;
+    top: 20px;
+    position: absolute;
+}
+
+.pcmostra{
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    padding-left: 35px;
+}
+
+h3{
+    padding-left: 75px;
+}
+
+.guitar{
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    padding-left: 35px;
+}
+
+aside p{
+    padding-left: 75px;
+}
+
+.div{
+    display: none;
+}
+
+.eleme{
+    display: none;
+}
+
+.texto{
+    padding-right: 750px;
+    padding-bottom: 10px;
+}
+
+/* Reset básico de margens, paddings e box-sizing */
+body, 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais para o corpo */
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+}
+
+/* Estilos para links */
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+/* Estilos do cabeçalho */
+
+/* Estilos do menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Estilos dos links do menu */
+.menu a {
+    padding: 1rem;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+/* Efeito hover para os links do menu */
+.menu a:hover {
+    background-color: var(--royal-blue-dark);
+}
+/* Escondendo checkbox e label para o menu até a resolução adequada */
+.label-menu, 
+.checkbox {
+    display: none;
+}
+
+/* Estilos específicos para telas menores que 600px */
+@media screen and (max-width: 400px) {
+    /* Configuração do menu para dispositivos móveis */
+    .menu {
+        display: none; /* Menu escondido por padrão */
+        position: absolute;
+        top: 4.6875rem;
+        left: 0;
+        background-color: var(--royal-blue-light);
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 2;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: height 0.5s, visibility 0.5s;
+    }
+
+    /* Estilos dos links do menu para dispositivos móveis */
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 50px;
+    }
+
+    .div{
+        display: contents;
+    }
+
+    .eleme{
+        display: contents;
+    }
+
+    .label-menu, 
+    .checkbox {
+    display: none;
+}
+
+    /* Estilos do label para o menu */
+    .label-menu {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--white);
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    /* Estilos do ícone de hamburguer */
+    .hamburguer {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    /* Estilos das linhas do ícone de hamburguer */
+    .hamburguer::before,
+    .hamburguer::after {
+        content: "";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: transform 0.5s;
+    }
+
+    /* Menu visível quando checkbox está checado */
+    .checkbox:checked ~ .menu {
+        display: block;
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    /* Animação do ícone de hamburguer quando menu está aberto */
+    .checkbox:checked ~ .label-menu .hamburguer {
+        border-top-color: transparent;
+    }
+    .checkbox:checked ~ .label-menu .hamburguer::before {
+        transform: rotate(135deg);
+    }
+    .checkbox:checked ~ .label-menu .hamburguer::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+    .perfil{
+        display: none;
+    }
+    .mercado1{
+        top: 0px;
+        width: 200px;
+        left: 90px;
+        height: 50px;
+    }
+    .carro{
+        display: none;
+    }
+    .botao4{
+        bottom: -20px;
+    }
+
+}
+
+.celola{
+    width: 250px;
+    height: 250px;
+}
+
+.botao4{
+    background-color: rgb(52, 248, 52);
+    color: black;
+    width: 115px;
+    height: 35px;
+    box-shadow: 4px 3px;
+    border-radius: 30px;
+    right: 50px;
+    position: absolute;
+}
+
+.botao5{
+    border-radius: 100px;
+    width: 90px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(47, 255, 0);
+    
+}
