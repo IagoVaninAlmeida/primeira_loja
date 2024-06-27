@@ -35,6 +35,13 @@ body{
     
 }
 
+.botao1{
+    text-align: center;
+    top: 350px;
+    left: 137px;
+    position: absolute;
+}
+
 .botao{
     text-align: center;
     top: 250px;
@@ -49,6 +56,15 @@ h1{
     text-align: center;
 }
 
+.botao1{
+    background-color: rgb(13, 53, 231);
+    color: rgb(255, 255, 255);
+    width: 115px;
+    height: 35px;
+    box-shadow: 2px 1px;
+    border-radius: 30px;
+}
+
 .botao{
     background-color: rgb(13, 53, 231);
     color: rgb(255, 255, 255);
@@ -56,7 +72,7 @@ h1{
     height: 35px;
     box-shadow: 2px 1px;
     border-radius: 30px;
-    }
+}
 
 .cadas{
     text-decoration: none;

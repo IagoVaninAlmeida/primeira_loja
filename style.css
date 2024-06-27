@@ -1,3 +1,4 @@
+/* nomeei as areas do código */
 body{
     display: grid;
     grid-template-areas: 
@@ -9,6 +10,7 @@ body{
     margin: -50px;
 }
 
+/* defini a cor e a posição das coisas do header */
 header{
     grid-area: cabeca;
     background-color: yellow;
@@ -16,22 +18,26 @@ header{
     position: relative;
 }
 
+/* defini a cor do aside e coloquei uma borda para diferenciá-lo */
 aside{
     grid-area: lateral;
     background-color: yellow;
     border: 2px black solid;
 }
 
+/* apenas defini a cor do main */
 main{
     grid-area: meio;
     background-color: rgb(247, 233, 233);
 }
 
+/* defini a cor do footer */
 footer{
     grid-area: pe;
     background-color: rgb(135, 135, 199);
 }
 
+/* defini a responsividade de 800 pixels */
 @media screen and (max-width: 800px){
         body{
             grid-template-areas: 
@@ -47,12 +53,14 @@ footer{
         }
 }
 
+/* ajustei a imagem denominada "mercado2" */
 .mercado2{
     width: 300px;
     height: 100px;
     padding-top: 5px;
 }
 
+/* ajustei posição e tamanho do "mercado1" */
 .mercado1{
     width: 300px;
     height: 100px;
@@ -61,6 +69,7 @@ footer{
     left: 830px;
 }
 
+/* abri uma seção para as box */
 .elementomae{
     justify-content: space-between;
     display: flex;
@@ -69,6 +78,7 @@ footer{
     align-items: center;
 }
 
+/* ajustei todas as box de forma uniforme */
 .card{
     border: 2px solid rgb(255, 255, 255);
     width: 275px;
@@ -81,16 +91,20 @@ footer{
     transition: 0.25s;
     text-align: center;
 }
+
+/* defini uma transição de cor para quando o mouse passar por cima */
 .card:hover{
     background-color: rgb(56, 56, 56);
     color: rgb(255, 255, 255);
 }
 
+/* ajustei o tamanho das imagens dos cards */
 .card img{
     width: 150px;
     height: 100px;
 }
 
+/* arrumei o link dos card que redireciona para outro html */
 .card a{
     background-color: aqua;
     border-radius: 100px;
@@ -98,28 +112,33 @@ footer{
     text-align: center;
 }
 
+/* arrumei a posição da foto de perfil */
 .perfil{
     top: 10px;
     left: 60px;
     position: absolute;
 }
 
+/* arrumei a foto de perfil, porém do html de conta */
 .fotofil{
     width: 150px;
     height: 150px;
     border-radius: 150px;
 }
 
+/* ajustei os links de forma geral */
 a{
     text-decoration: none;
     color: black;
 }
 
+/* configurei e arrumei a imagem de carrinho */
 .carrinho{
     width: 175px;
     height: 175px;
 }
 
+/* arrumei a imagem de carrinho, porḿe no html dele */
 .carro{
     width: 100px;
     height: 100px;
@@ -128,6 +147,7 @@ a{
     position: absolute;
 }
 
+/* arrumei uma foto do pc para por no aside e ajustei tamanho e posição */
 .pcmostra{
     height: 150px;
     width: 200px;
@@ -135,10 +155,12 @@ a{
     padding-left: 35px;
 }
 
+/* defini a posição das escritas nominadas "h3" */
 h3{
     padding-left: 75px;
 }
 
+/* ajustei a posição e tamanho da imagem do aside */
 .guitar{
     height: 150px;
     width: 200px;
@@ -146,10 +168,12 @@ h3{
     padding-left: 35px;
 }
 
+/* arrumei o texto do aside denominado como "p" */
 aside p{
     padding-left: 75px;
 }
 
+/* ajustei o div */
 .div{
     display: none;
 }
